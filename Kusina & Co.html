@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kusina &amp; Co. | Filipino Flavor. Modern Experience.</title>
+<meta name="description" content="Authentic Filipino food, thoughtfully prepared and served fresh.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a href="#home" class="logo" aria-label="Kusina &amp; Co. home">Kusina <span>&amp;</span> Co.</a>
+    <nav class="nav__links" id="navLinks" aria-label="Main">
+      <a href="#home">Home</a>
+      <a href="#menu">Our Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="btn btn--primary btn--sm" id="cartOpen" aria-label="Open order">Order Now <span class="badge" id="cartCount">0</span></button>
+      <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero__grid">
+    <div class="hero__text">
+      <p class="tagline">Filipino Flavor. Modern Experience.</p>
+      <h1>Authentic Filipino Food, Made with Love.</h1>
+      <p class="lead">Discover the rich flavors of Filipino cuisine, thoughtfully prepared and served fresh for every craving.</p>
+      <div class="btn-row">
+        <a href="#menu" class="btn btn--primary">Explore Our Menu</a>
+        <button class="btn btn--ghost" data-open-cart>Order Now</button>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <div class="arch ph" style="--g:linear-gradient(160deg,#C97B5A,#A94732 60%,#6e2a1c)">
+        <img src="hero.jpg" alt="A spread of Filipino dishes" onerror="if(!this.dataset.t){this.dataset.t=1;this.src='images/'+this.getAttribute('src')}else{this.remove()}">
+      </div>
+      <div class="hero__note"><strong>Cooked fresh daily</strong><span>Recipes passed down, plated for today.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="featured">
+  <div class="container">
+    <div class="head"><h2>Featured Dishes</h2><p>Four favorites our guests keep coming back for.</p></div>
+    <div class="grid grid--4" id="featuredGrid"></div>
+  </div>
+</section>
+
+<section class="section section--beige" id="about">
+  <div class="container split">
+    <div class="ph story__img" style="--g:linear-gradient(160deg,#E2C79B,#C6A15B)">
+      <img src="story.jpg" alt="A family sharing a Filipino meal" loading="lazy" onerror="if(!this.dataset.t){this.dataset.t=1;this.src='images/'+this.getAttribute('src')}else{this.remove()}">
+    </div>
+    <div class="story">
+      <h2>More Than Just Food. It's a Taste of Home.</h2>
+      <p>In every Filipino home, the table is where life happens. Birthdays, Sunday lunches, and long evenings with cousins and neighbors all start with a pot simmering on the stove.</p>
+      <p>Kusina &amp; Co. grew from those tables. We cook authentic family recipes with fresh ingredients and patient technique, the way our lolas did, and serve them in a way that fits modern life.</p>
+      <p>Every plate is meant to feel like coming home.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="menu">
+  <div class="container">
+    <div class="head"><h2>Our Menu</h2><p>Browse by category and add what you're craving.</p></div>
+    <div class="filters" id="filters" role="tablist" aria-label="Menu categories">
+      <button class="chip is-active" data-filter="all">All</button>
+      <button class="chip" data-filter="Main Dishes">Main Dishes</button>
+      <button class="chip" data-filter="Rice Meals">Rice Meals</button>
+      <button class="chip" data-filter="Noodles">Noodles</button>
+      <button class="chip" data-filter="Desserts">Desserts</button>
+      <button class="chip" data-filter="Beverages">Beverages</button>
+    </div>
+    <div class="grid grid--3" id="menuGrid"></div>
+  </div>
+</section>
+
+<section class="section section--beige">
+  <div class="container">
+    <div class="head"><h2>Why Choose Us</h2></div>
+    <div class="grid grid--3 values">
+      <article class="value">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 3 5 5.5 5 9a5 5 0 0 1-10 0c0-1.7.8-3 2-4 .2 1.5 1 2.2 2 2.5C11 8 11 5.5 12 3Z"/></svg>
+        <h3>Authentic Filipino Flavors</h3><p>True-to-tradition recipes, seasoned the way home cooks have for generations.</p>
+      </article>
+      <article class="value">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20c0-8 4-14 14-15 0 9-5 14-13 14M5 20c2-5 5-8 9-10"/></svg>
+        <h3>Freshly Prepared Meals</h3><p>Cooked to order with fresh ingredients, never reheated from yesterday.</p>
+      </article>
+      <article class="value">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg>
+        <h3>Made with Love and Tradition</h3><p>Every dish carries the care of a family kitchen.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="offers">
+  <div class="container">
+    <div class="head"><h2>Special Offers</h2><p>Best-sellers and bundles made for sharing.</p></div>
+    <div class="grid grid--3" id="offersGrid"></div>
+  </div>
+</section>
+
+<section class="section section--charcoal">
+  <div class="container">
+    <div class="head"><h2>What Our Guests Say</h2></div>
+    <div class="grid grid--3">
+      <figure class="quote"><blockquote>The kare-kare tastes exactly like my lola's. I almost cried at the first bite.</blockquote><figcaption>Maricel D.<span>Quezon City</span></figcaption></figure>
+      <figure class="quote"><blockquote>Fresh, generous, and on time. The Handaan Bundle fed our whole family.</blockquote><figcaption>Paolo R.<span>Calamba</span></figcaption></figure>
+      <figure class="quote"><blockquote>Finally, Filipino food that feels special without losing its soul.</blockquote><figcaption>Ana L.<span>Makati</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container split split--top">
+    <div class="contact__info">
+      <h2>Get in Touch</h2>
+      <p class="lead">Questions, catering, or a big order? Send us a message and we'll reply within a day.</p>
+      <dl>
+        <dt>Phone</dt><dd><a href="tel:+639753770020">+63 975 377 0020</a></dd>
+        <dt>Email</dt><dd><a href="mailto:airajanesueno@gmail.com">airajanesueno@gmail.com</a></dd>
+        <dt>Location</dt><dd>Calaca City, Philippines</dd>
+        <dt>Hours</dt><dd>Mon to Fri, 10:00 AM to 9:00 PM<br>Sat to Sun, 9:00 AM to 10:00 PM</dd>
+      </dl>
+    </div>
+    <form class="form" id="contactForm" novalidate>
+      <div class="field"><label for="cName">Name</label><input id="cName" name="name" type="text" autocomplete="name"><small></small></div>
+      <div class="field"><label for="cEmail">Email</label><input id="cEmail" name="email" type="email" autocomplete="email"><small></small></div>
+      <div class="field"><label for="cMsg">Message</label><textarea id="cMsg" name="message" rows="5"></textarea><small></small></div>
+      <button class="btn btn--primary" type="submit">Send message</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <div><a href="#home" class="logo">Kusina <span>&amp;</span> Co.</a><p>Filipino flavor, modern experience. Home-style cooking, served with care.</p></div>
+    <div><h4>Explore</h4><a href="#home">Home</a><a href="#menu">Our Menu</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+    <div><h4>Contact</h4><a href="tel:+639753770020">+63 975 377 0020</a><a href="mailto:airajanesueno@gmail.com">airajanesueno@gmail.com</a></div>
+    <div><h4>Follow</h4><a href="#">Facebook</a><a href="#">Instagram</a><a href="#">TikTok</a></div>
+  </div>
+  <p class="copy">&copy; <span id="year"></span> Kusina &amp; Co. All rights reserved.</p>
+</footer>
+
+<div class="overlay" id="overlay"></div>
+<aside class="cart" id="cart" aria-label="Your order" aria-hidden="true">
+  <div class="cart__head"><h3>Your Order</h3><button class="icon-btn" id="cartClose" aria-label="Close order">&times;</button></div>
+  <div class="cart__items" id="cartItems"></div>
+  <div class="cart__foot">
+    <div class="row"><span>Total</span><strong id="cartTotal">₱0</strong></div>
+    <button class="btn btn--primary btn--block" id="checkout">Place order</button>
+    <button class="link" id="clearCart">Clear order</button>
+  </div>
+</aside>
+
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
